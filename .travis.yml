@@ -1,0 +1,13 @@
+language: java
+jdk:
+  - oraclejdk11
+
+script:
+  - mvn -e -DTRAVIS_JOB_ID=$TRAVIS_JOB_ID clean install
+
+notifications:
+  email:
+    - dario.albelo28@gmail.com
+    - leandromatiasgomez@gmail.com
+    - emrod25.er@gmail.com
+    - mosjim@gmail.com
